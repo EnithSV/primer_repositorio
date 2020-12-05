@@ -1,0 +1,389 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+main {
+  height: auto;
+  padding: 2em 2em;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: #0404B4;
+}
+
+h3 {
+  color: #088A08;
+}
+
+html {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1em;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 1em 2em;
+  background: #070566;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav h1 {
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+nav li a {
+  font-size: 1 em;
+  padding: 0.7em 1em;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 0.7em;
+}
+
+nav li a:hover {
+  background: white;
+  color: black;
+}
+
+.active {
+  background: white;
+  color: black;
+}
+
+.hero {
+  background: url("https://www.adiestramientocaninos.com/wp-content/uploads/2017/11/veterinarias-bogota-facebook.jpg") no-repeat 50%;
+  background-size: cover;
+  height: 500px;
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+
+#eventos .hero {
+  background: url("http://recordchiapas.mx/wp-content/uploads/2016/08/doctor4.jpg") no-repeat 50%;
+  background-size: cover;
+}
+
+.hero::before {
+  content: "";
+  background: black;
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.hero-txt {
+  text-align: center;
+}
+
+.hero-txt h1 {
+  color: #070566;
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+.hero-txt p {
+  font-size: 1.5em;
+  color: black;
+  margin-bottom: 1.5em;
+}
+
+.hero a {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.7em 1.1em;
+  margin: 0 0.5em;
+  border-radius: 0.6em;
+  letter-spacing: 0.1em;
+}
+
+.cta-pri {
+  color: white;
+  background: green;
+  border: 1px solid green;
+}
+
+.cta-sec {
+  color: #070566;
+  background: white;
+  border: 1px solid #070566;
+}
+
+.cta-sec:hover {
+  color: white;
+  background: #070566;
+  border: 1px solidrgb(7, 5, 102);
+}
+
+/* --------- Galería Nuestras marcas---------- */
+#catalogo .hero {
+  background: url("https://irp-cdn.multiscreensite.com/2b133484/DESKTOP/png/982.png") no-repeat 50%;
+  background-size: cover;
+}
+
+.galeria_marcas {
+  padding: 0.5em 0.5em;
+}
+
+.galeria_marcas h2 {
+  text-align: left;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.galeria_marcas-grid {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2em;
+}
+
+/* ---------CATÁLOGO---------- */
+.cabecera_catalogo {
+  padding: 4rem;
+  text-align: center;
+}
+
+.galeria_productos {
+  padding: 0.5em 0.5em;
+}
+
+.galeria_productos h2 {
+  text-align: left;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.galeria_productos-grid {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2em;
+}
+
+.galeria_productos-nota {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.galeria_productos-nota a {
+  margin-left: 10px;
+}
+
+/* ------------PROMOCIONES --------- */
+.container_card {
+  height: auto;
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.card {
+  background: #91e791;
+  height: auto;
+  width: 300px;
+  padding: 4em;
+  text-align: center;
+  border-radius: 0.7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 38px 5px rgba(0, 0, 0, 0.75);
+}
+
+.card_img {
+  border-radius: 0.5em;
+  background: red;
+  height: 200px;
+  margin-bottom: 1em;
+}
+
+.img-1,
+.img-2,
+.img-3 {
+  background: url("https://www.nutrire.ind.br/content/produtos/g/b0203dd0214c9bd4654429063014098e.png") no-repeat 50%;
+  background-size: cover;
+}
+
+.card p {
+  color: black;
+  font-size: 1.5em;
+}
+
+.card p span {
+  display: block;
+  font-size: 2em;
+  color: red;
+}
+
+/* ---------EVENTOS---------- */
+.registro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.registro p {
+  margin: 2em;
+}
+
+.registro a {
+  background-color: green;
+  font-size: 0.7em;
+  text-align: center;
+  padding: 0.7em 1em;
+  text-transform: uppercase;
+  color: #f6faf6;
+  border-radius: 0.7em;
+  transition: all 0.5s ease;
+}
+
+.registro a:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.75);
+}
+
+/* ---------CONTACTO---------- */
+.container-flex {
+  height: auto;
+  min-height: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.mapa {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mapa a {
+  color: blue;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 1px solid blue;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8em;
+}
+
+form label {
+  margin: 1em 0 0.5em;
+}
+
+form input {
+  padding: 1em 0.5em;
+  font-size: 1em;
+  height: 1.5em;
+}
+
+form textarea {
+  padding: 1em 0.5em;
+  font-size: 1em;
+  resize: none;
+  width: 100%;
+  min-height: 100px;
+  max-height: 200px;
+}
+
+form input[type=submit] {
+  margin: 0 auto;
+  margin-top: 1em;
+  height: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.7em 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 0.6em;
+  letter-spacing: 0.1em;
+  color: white;
+  background: green;
+  border: 1px solid green;
+}
+
+/* ------footer---------- */
+footer {
+  background-color: #060c1d;
+  padding: 18px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  color: white;
+}
+
+footer a {
+  margin: 0;
+  color: whitesmoke;
+}
+
+footer p {
+  margin: 0;
+}
