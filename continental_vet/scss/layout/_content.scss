@@ -1,11 +1,5 @@
 /* --------- Galería Nuestras marcas---------- */
 
-
-#catalogo .hero {
-  background: url("https://irp-cdn.multiscreensite.com/2b133484/DESKTOP/png/982.png") no-repeat 50%;
-  background-size: cover;
-}
-
 .galeria_marcas {
   padding: 0.5em 0.5em;
 }
@@ -32,9 +26,13 @@
 
 .cabecera_catalogo {
   padding: 4rem;
-  text-align: center;
+  text-align: end;
 }
 
+.hero-txt h2{
+  color:rgb(7, 0, 0)
+}
+  
 .galeria_productos {
   padding: 0.5em 0.5em;
 }
@@ -128,8 +126,6 @@
 
 /* ---------EVENTOS---------- */
 
-
-
 .registro {
   display: flex;
   flex-direction: row;
@@ -159,13 +155,23 @@
 
 /* ---------CONTACTO---------- */
 
-.container-flex {
+.container-contacto {
   height: auto;
   min-height: 600px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+ }
+
+.container-contacto_consultas{
+  padding:1em;
+}
+
+.container-contacto_mapa{
+  display: flex;
+  flex-direction: column;
+  padding:1em;
 }
 
 .mapa {
